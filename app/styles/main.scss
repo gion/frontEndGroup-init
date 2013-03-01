@@ -1,0 +1,38 @@
+@import "compass_twitter_bootstrap";
+@import "animation-mixins.scss";
+@import "../components/angular-ui/build/angular-ui.min.css";
+@import "../components/codemirror/lib/codemirror.css";
+@import "../components/codemirror/theme/monokai.css";
+
+.ng-invalid { 
+	border: 1px solid red; 
+}
+
+[contentEditable] {
+    cursor: pointer;
+}
+
+.hint{
+	[contentEditable] {
+	   @include animation(hintAnimation, 2s, ease-in-out, 0, 2);
+	}
+}
+
+.del{
+    text-decoration : line-through;
+}
+
+.answer{
+	font-weight: bold;
+	font-style: italic;
+}
+
+@include keyframe(hintAnimation){
+	0%, 100%{
+		background: transparent;
+	}
+
+	50%{
+		background: #f90;
+	}
+}

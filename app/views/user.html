@@ -1,0 +1,29 @@
+<div class="hero-unit" ng-class='{"hint":!!hint}'>
+	<h4>Salut!</h4>
+	<p>
+		 Ma numesc <span contenteditable="true" ng-model="user.name">Portiera Mitrut</span> si vreau sa imi aprofundez cunostintele de <span class="del">javascript</span> front end.
+	</p>
+	<p>
+        In viata mea de programator lucrez <span contenteditable="true" ng-model="user.howMuch">cat de cat</span> pe front end si vreau sa imi aprofundez in special cunostintele de <span contenteditable="true" ng-model="user.languageToImprove">jquery</span>.
+	</p>
+	<p>
+		Lucrul cel mai intens cu {{user.languageToImprove}} de pana acum a fost la <span contenteditable="true" ng-model="user.mostIntenseProject">proiectul X</span>, unde am facut <span contenteditable="true" ng-model="user.tasks">niste treburi faine</span>. Partea cea mai grea a fost <span contenteditable="true" ng-model="user.hardestTasks">aia de m-am chinuit mult cu ea</span>. Proiectul asta ({{user.mostIntenseProject}}) m-a ajutat sa invat <span contenteditable="true" ng-model="user.learned">cum sa folosesc pluginul Y de jquery</span>.
+	</p>
+	<p>
+		Pe langa {{user.languageToImprove}} ma mai intereseaza si <span contenteditable="true" ng-model="user.secondLanguage">css / css3</span>. Chiar daca <span contenteditable="true" ng-model="user.secondLanguageExperiments">nu (sau da?)</span> am avut ocazia sa am joc putin cu {{user.secondLanguage}}, ma atrage <span contenteditable="true" ng-model="user.secondLanguageAttraction">it's awesomeness</span>. Nu, despre <span contenteditable="true" ng-model="user.hatedLanguage">mobile dev</span> nu prea vreau sa aud pentru ca <span contenteditable="true" ng-model="user.hatedLanguageReason">e naspa</span>.
+	</p>
+	<p>
+		Aaaa, era sa uit! Eu asa as scrie un program "Hello World" in javascript : 
+	</p>
+	
+
+	<textarea ui-codemirror="{theme:'monokai',lineNumbers: true, matchBrackets: true,mode: 'text/typescript'}" ng-model="user.helloWorld"></textarea>
+	
+	<fieldset>
+		<button ng-hide="hint" type="button" class="btn btn-primary" ng-click="showHint()">hint</button>
+		<button ng-show="hint" type="button" disabled class="btn btn-primary">hint</button>
+
+		<button type="button" class="btn btn-primary" ng-click="submit()">submit</button>
+	</fieldset>
+
+</div>

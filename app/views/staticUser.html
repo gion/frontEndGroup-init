@@ -1,0 +1,24 @@
+<div class="hero-unit" ng-class='{"hint":!!hint}' ng-cloak>
+	<h4>Salut!</h4>
+	<p>
+		 Ma numesc <span class="answer" ng-model="user.name">{{user.name}}</span> si vreau sa imi aprofundez cunostintele de <span class="del">javascript</span> front end.
+	</p>
+	<p>
+        In viata mea de programator lucrez <span class="answer" ng-model="user.howMuch">{{user.howMuch}}</span> pe front end si vreau sa imi aprofundez in special cunostintele de <span class="answer" ng-model="user.languageToImprove">{{user.languageToImprove}}</span>.
+	</p>
+	<p>
+		Lucrul cel mai intens cu {{user.languageToImprove}} de pana acum a fost la <span class="answer" ng-model="user.mostIntenseProject">{{user.mostIntenseProject}}</span>, unde am facut <span class="answer" ng-model="user.tasks">{{user.tasks}}</span>. Partea cea mai grea a fost <span class="answer" ng-model="user.hardestTasks">{{user.hardestTasks}}</span>. Proiectul asta ({{user.mostIntenseProject}}) m-a ajutat sa invat <span class="answer" ng-model="user.learned">{{user.learned}}</span>.
+	</p>
+	<p>
+		Pe langa {{user.languageToImprove}} ma mai intereseaza si <span class="answer" ng-model="user.secondLanguage">{{user.secondLanguage}}</span>. Chiar daca <span class="answer" ng-model="user.secondLanguageExperiments">{{user.secondLanguageExperiments}}</span> am avut ocazia sa am joc putin cu {{user.secondLanguage}}, ma atrage <span class="answer" ng-model="user.secondLanguageAttraction">{{user.secondLanguageAttraction}}</span>. Nu, despre <span class="answer" ng-model="user.hatedLanguage">{{user.hatedLanguage}}</span> nu prea vreau sa aud pentru ca <span class="answer" ng-model="user.hatedLanguageReason">{{user.hatedLanguageReason}}</span>.
+	</p>
+	<p>
+		Aaaa, era sa uit! Eu asa as scrie un program "Hello World" in javascript : 
+	</p>
+	
+
+	<textarea ui-codemirror="{theme:'monokai',lineNumbers: true, matchBrackets: true,mode: 'text/typescript', readOnly : true}" ng-model="user.helloWorld"></textarea>
+
+	<a href="#/users">inapoi la ce au scris altii</a>
+
+</div>
