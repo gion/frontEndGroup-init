@@ -3,7 +3,7 @@
   <p>Daca nu ai completat povestea inca, completeaz-o <a href="#/user">aici</a>.</p>	
   <h3>Ce au mai scris altii:</h3>
   <ul>
-      <li ng-repeat="user in users">
+      <li ng-repeat="user in users|orderBy:'name'">
       	<a href="#/user/{{user.id}}">{{user.name}}</a>
       </li>
   </ul>
